@@ -76,23 +76,26 @@ class _ControlPageState extends State<ControlPage> {
                     _stopPlatform = !_stopPlatform;
                   });
                 },
-                child: Row(
-                  children: [
-                    _checkBox(),
-                    const SizedBox(width: 15),
-                    Text(
-                      'Stop platform when disconnected',
-                      style: AppTextStyles.defaultText,
-                    ),
-                  ],
+                child: Container(
+                  color: Colors.transparent,
+                  child: Row(
+                    children: [
+                      _checkBox(),
+                      const SizedBox(width: 15),
+                      Text(
+                        'Stop platform when disconnected',
+                        style: AppTextStyles.defaultText,
+                      ),
+                    ],
+                  ),
                 ),
               ),
               const SizedBox(height: 20),
               _statusBox(),
-              const SizedBox(height: 20),
+              const Expanded(child: SizedBox.shrink()),
               Text('Speed', style: AppTextStyles.defaultText),
               _slider(context),
-              const Expanded(child: SizedBox.shrink()),
+              const SizedBox(height: 20),
               SizedBox(
                 height: 70,
                 child: Row(

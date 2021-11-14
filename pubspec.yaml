@@ -35,7 +35,12 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^2.1.0
-  flutter_ble_lib: ^2.3.2
+  flutter_reactive_ble: ^5.0.2
+  equatable: ^2.0.3
+  flutter_bloc: ^7.3.3
+  bloc: ^7.2.1
+  permission_handler: ^8.2.0
+  shared_preferences: ^2.0.8
 
 dev_dependencies:
   flutter_test:
